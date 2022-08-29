@@ -3,6 +3,9 @@ body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
+a{
+    text-decoration: none;
+}
 /* common css end */
 /* header part start */
 #header-part{
@@ -17,7 +20,6 @@ width: 100%;
 height: 50px;
 }
 #header-part nav a{
-    text-decoration: none;
     color: white;
     margin-left: 30px;
     transition: color 1s;
@@ -26,3 +28,117 @@ height: 50px;
     color: #01ABFF;
 }
 /* header part end */
+
+/* banner part start */
+#banner-part{
+    display: flex;
+    background-color: #370651;
+    margin: 50px 140px 0px;
+    border-radius: 30px;
+}
+.banner-content{
+    width: 60%;
+    padding-left: 50px;
+}
+.banner-content h1{
+font-size: 65px;
+color: #FFFFFF;
+font-weight: 700;
+margin-bottom: 20px;
+}
+.banner-content p{
+color: #FFFFFF;
+margin-bottom: 40px;
+}
+.banner-content a{
+    padding: 16px 25px;
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+    transition: 1s;
+}
+.banner-content a:hover{
+    background-color: #01ABFF; 
+}
+.banner-content a span{
+    padding-left: 10px;
+}
+.banner-image{
+    width: 40%;
+}
+.banner-image img{
+    width: 100%;
+    position: relative;
+    bottom: -7px;
+}
+/* banner part end */
+
+/* details part start */
+#details-part{
+    display: flex;
+    padding: 130px 140px;
+}
+.side-menu-bar{
+    display: flex;
+    flex-direction: column;
+    background-color: #370651;
+    border-radius: 20px;
+    padding: 30px;
+    margin-right: 24px;
+    max-height: 250px;
+}
+.side-menu-bar a{
+    color: #161616;
+    background-color: white;
+    padding: 12px 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    transition: 1s;
+}
+.side-menu-bar a:hover{
+    background-color: #01ABFF;
+}
+.side-menu-bar a:last-child{
+    margin-bottom: 0px;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    flex-grow: 1;
+}
+.blog{
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+}
+.blog img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    }
+.blog-content{
+ padding: 20px;
+}
+.blog-content a{
+ padding: 4px 16px;
+ border: 1px solid #161616;
+ border-radius: 5px;
+ color: #161616;
+ font-weight: 500;
+ transition: background-color 1s;
+}
+.blog-content a:hover{
+    background-color: #01ABFF;
+    border: none;
+}
+.blog-info{
+display: flex;
+justify-content: space-between;
+width: 60%;
+}
+.blog-info span i{
+ margin-right: 10px;
+}
+/* details part end */
