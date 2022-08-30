@@ -78,12 +78,13 @@ a {
 
 .banner-image {
     width: 40%;
+    position: relative;
 }
 
 .banner-image img {
     width: 100%;
-    position: relative;
-    bottom: -7px;
+    position: absolute;
+    bottom: 0;
 }
 
 /* banner part end */
@@ -366,11 +367,13 @@ a {
     .banner-content p {
         margin-bottom: 14px 0px 20px;
     }
-
+    .banner-image{
+        position: relative;
+    }
     .banner-image img {
         width: 100%;
-        position: relative;
-        bottom: -182px;
+        position: absolute;
+        bottom: 0;
     }
 
     #details-part {
