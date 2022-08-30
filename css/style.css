@@ -98,6 +98,8 @@ margin-bottom: 40px;
     font-weight: 500;
     text-align: center;
     transition: 1s;
+}.side-menu-bar a:last-child{
+    background-color: #01ABFF;
 }
 .side-menu-bar a:hover{
     background-color: #01ABFF;
@@ -167,3 +169,30 @@ width: 60%;
     margin: 0px 25px;
 }
 /* footer part end */
+
+/* responsive layout for mobile */
+@media screen and (max-width: 480px) {
+    #header-part{
+        display: none;
+        
+    }
+    #banner-part{
+        flex-direction: column;
+        margin: 20px 20px;
+    }
+    .banner-content{
+        width: 100%;
+        padding: 20px 38px;
+        height: 50%;
+    }
+    .banner-content h1{
+        font-size: 20px;
+        }
+    .banner-image{
+        width: 100%;
+        height: 50%;
+    }
+    #details-part, #footer-part{
+        display: none;
+    }
+}
